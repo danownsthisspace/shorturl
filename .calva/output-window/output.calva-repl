@@ -1,0 +1,454 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.9.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉shorturl.db꞉> 
+#'shorturl.db/mysql-db
+clj꞉shorturl.db꞉> 
+; Syntax error compiling at (db.clj:9:1).
+; No such namespace: j
+clj꞉shorturl.db꞉> 
+nil
+clj꞉shorturl.db꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:129).
+; syntax error at position 19 near 'redirects'
+clj꞉shorturl.db꞉> 
+()
+clj꞉shorturl.db꞉> 
+; Jacking in...
+; nREPL Connection was closed
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.9.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+; WARNING: set already refers to: #'clojure.core/set in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/set
+; WARNING: into already refers to: #'clojure.core/into in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/into
+; WARNING: group-by already refers to: #'clojure.core/group-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/group-by
+; WARNING: update already refers to: #'clojure.core/update in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/update
+; WARNING: partition-by already refers to: #'clojure.core/partition-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/partition-by
+; WARNING: for already refers to: #'clojure.core/for in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/for
+; WARNING: filter already refers to: #'clojure.core/filter in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/filter
+clj꞉shorturl.db꞉> 
+{:select [:a :b :c], :from [:foo], :where [:= :foo.a "baz"]}
+clj꞉shorturl.db꞉> 
+["SELECT a, b, c FROM foo WHERE foo.a = ?" "baz"]
+clj꞉shorturl.db꞉> 
+["SELECT * FROM redirects"]
+clj꞉shorturl.db꞉> 
+; Syntax error compiling at (db.clj:12:1).
+; Unable to resolve symbol: mysql-db in this context
+clj꞉shorturl.db꞉> 
+["SELECT * FROM redirects"]
+clj꞉shorturl.db꞉> 
+; Syntax error compiling at (db.clj:12:1).
+; Unable to resolve symbol: mysql-db in this context
+clj꞉shorturl.db꞉> 
+#'shorturl.db/mysql-db
+clj꞉shorturl.db꞉> 
+()
+clj꞉shorturl.db꞉> 
+#'shorturl.db/query
+clj꞉shorturl.db꞉> 
+()
+clj꞉shorturl.db꞉> 
+#'shorturl.db/insert!
+clj꞉shorturl.db꞉> 
+(1)
+clj꞉shorturl.db꞉> 
+({:slug "abc", :url "https://github.com/seancorfield/honeysql"})
+clj꞉shorturl.db꞉> 
+#'shorturl.db/insert-redirect!
+clj꞉shorturl.db꞉> 
+(1)
+clj꞉shorturl.db꞉> 
+({:slug "abc", :url "https://github.com/seancorfield/honeysql"}
+ {:slug "xyz", :url "https://github.com/clojure/java.jdbc"})
+clj꞉shorturl.db꞉> 
+#'shorturl.db/get-url
+clj꞉shorturl.db꞉> 
+({:slug "xyz", :url "https://github.com/clojure/java.jdbc"})
+clj꞉shorturl.db꞉> 
+({:slug "xyz", :url "https://github.com/clojure/java.jdbc"})
+clj꞉shorturl.db꞉> 
+#'shorturl.db/get-url
+clj꞉shorturl.db꞉> 
+{:slug "xyz", :url "https://github.com/clojure/java.jdbc"}
+clj꞉shorturl.db꞉> 
+#'shorturl.db/get-url
+clj꞉shorturl.db꞉> 
+"https://github.com/clojure/java.jdbc"
+clj꞉shorturl.db꞉> 
+{:url "our url"}
+clj꞉shorturl.db꞉> 
+{:url "our url"}
+clj꞉shorturl.db꞉> 
+"our url"
+clj꞉shorturl.db꞉> 
+"our url"
+clj꞉shorturl.db꞉> 
+"our url"
+clj꞉shorturl.db꞉> 
+"https://github.com/clojure/java.jdbc"
+clj꞉shorturl.db꞉> 
+; Execution error (FileNotFoundException) at shorturl.core/eval9256$loading (REPL:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉shorturl.core꞉> 
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.9.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; nREPL Connection was closed
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.core/start
+clj꞉shorturl.core꞉> 
+; Syntax error (BindException) compiling at (REPL:21:13).
+; Address already in use
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.core/start
+clj꞉shorturl.core꞉> 
+; Syntax error (BindException) compiling at (REPL:21:13).
+; Address already in use
+clj꞉shorturl.core꞉> 
+; Execution error (IllegalArgumentException) at shorturl.core/eval10863 (REPL:23).
+; No matching field found: stop for class clojure.lang.Var$Unbound
+clj꞉shorturl.core꞉> 
+#'shorturl.core/start
+clj꞉shorturl.core꞉> 
+#'shorturl.core/server
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+nil
+clj꞉shorturl.core꞉> 
+#'shorturl.core/server
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+nil
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+; Syntax error compiling at (core.clj:13:13).
+; No such namespace: db
+clj꞉shorturl.core꞉> 
+; Syntax error compiling at (core.clj:13:13).
+; No such namespace: db
+clj꞉shorturl.core꞉> 
+; Syntax error compiling at (core.clj:13:13).
+; No such namespace: db
+clj꞉shorturl.core꞉> 
+nil
+; WARNING: set already refers to: #'clojure.core/set in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/set
+; WARNING: into already refers to: #'clojure.core/into in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/into
+; WARNING: group-by already refers to: #'clojure.core/group-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/group-by
+; WARNING: update already refers to: #'clojure.core/update in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/update
+; WARNING: partition-by already refers to: #'clojure.core/partition-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/partition-by
+; WARNING: for already refers to: #'clojure.core/for in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/for
+; WARNING: filter already refers to: #'clojure.core/filter in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/filter
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+; Execution error (UnknownHostException) at java.net.Inet4AddressImpl/lookupAllHostAddr (Inet4AddressImpl.java:-2).
+; 7s591apj6z7p.eu-central-2.psdb.cloud: Temporary failure in name resolution
+; Execution error (UnknownHostException) at java.net.InetAddress$CachedAddresses/get (InetAddress.java:797).
+; 7s591apj6z7p.eu-central-2.psdb.cloud
+clj꞉shorturl.db꞉> 
+clj꞉shorturl.db꞉> 
+#'shorturl.db/mysql-db
+clj꞉shorturl.db꞉> 
+nil
+; WARNING: set already refers to: #'clojure.core/set in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/set
+; WARNING: into already refers to: #'clojure.core/into in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/into
+; WARNING: group-by already refers to: #'clojure.core/group-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/group-by
+; WARNING: update already refers to: #'clojure.core/update in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/update
+; WARNING: partition-by already refers to: #'clojure.core/partition-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/partition-by
+; WARNING: for already refers to: #'clojure.core/for in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/for
+; WARNING: filter already refers to: #'clojure.core/filter in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/filter
+clj꞉shorturl.db꞉> 
+; Execution error (UnknownHostException) at java.net.Inet4AddressImpl/lookupAllHostAddr (Inet4AddressImpl.java:-2).
+; 7s591apj6z7p.eu-central-2.psdb.cloud: Temporary failure in name resolution
+; Execution error (UnknownHostException) at java.net.InetAddress$CachedAddresses/get (InetAddress.java:797).
+; 7s591apj6z7p.eu-central-2.psdb.cloud
+clj꞉shorturl.db꞉> 
+clj꞉shorturl.db꞉> 
+#'shorturl.db/query
+clj꞉shorturl.db꞉> 
+#'shorturl.db/mysql-db
+clj꞉shorturl.db꞉> 
+#'shorturl.core/redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+#'shorturl.slug/charset
+clj꞉shorturl.slug꞉> 
+; Syntax error compiling at (slug.clj:6:3).
+; Unable to resolve symbol: rand-nth in this context
+clj꞉shorturl.slug꞉> 
+#'shorturl.slug/charset
+clj꞉shorturl.slug꞉> 
+; Syntax error compiling at (slug.clj:6:3).
+; Unable to resolve symbol: rand-nth in this context
+clj꞉shorturl.slug꞉> 
+nil
+clj꞉shorturl.slug꞉> 
+\N
+clj꞉shorturl.slug꞉> 
+\H
+clj꞉shorturl.slug꞉> 
+\Y
+clj꞉shorturl.slug꞉> 
+\Y
+clj꞉shorturl.slug꞉> 
+\C
+clj꞉shorturl.slug꞉> 
+\R
+clj꞉shorturl.slug꞉> 
+\Y
+clj꞉shorturl.slug꞉> 
+\C
+clj꞉shorturl.slug꞉> 
+\U
+clj꞉shorturl.slug꞉> 
+\U
+clj꞉shorturl.slug꞉> 
+; Error printing return value (ClassCastException) at clojure.core/repeatedly$fn (core.clj:5149).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉shorturl.slug꞉> 
+(\F \B \E \D)
+clj꞉shorturl.slug꞉> 
+(\Y
+ \Z
+ \O
+ \X
+ \D
+ \L
+ \Q
+ \L
+ \L
+ \F
+ \X
+ \D
+ \L
+ \L
+ \T
+ \Z
+ \U
+ \E
+ \A
+ \U
+ \M
+ \N
+ \Z
+ \Q
+ \D
+ \D
+ \M
+ \L
+ \X
+ \X
+ \K
+ \Z
+ \J
+ \T
+ \H
+ \G
+ \X
+ \R
+ \B
+ \J
+ \C
+ \Y
+ \S
+ \J
+ \O
+ \V
+ \R
+ \R
+ \D
+ \H
+ ...)
+clj꞉shorturl.slug꞉> 
+(\M
+ \U
+ \Y
+ \S
+ \B
+ \M
+ \P
+ \R
+ \Z
+ \F
+ \U
+ \U
+ \Y
+ \C
+ \G
+ \Z
+ \V
+ \Y
+ \F
+ \D
+ \R
+ \U
+ \D
+ \S
+ \H
+ \K
+ \T
+ \L
+ \S
+ \C
+ \A
+ \E
+ \M
+ \V
+ \L
+ \N
+ \O
+ \Z
+ \L
+ \M
+ \U
+ \G
+ \A
+ \J
+ \Z
+ \U
+ \X
+ \R
+ \S
+ \A
+ ...)
+clj꞉shorturl.slug꞉> 
+(\F \L \D \M)
+clj꞉shorturl.slug꞉> 
+"IVLC"
+clj꞉shorturl.slug꞉> 
+#'shorturl.slug/generate-slug
+clj꞉shorturl.slug꞉> 
+"YCHI"
+clj꞉shorturl.slug꞉> 
+; Syntax error compiling at (core.clj:21:14).
+; Unable to resolve symbol: generate-slug in this context
+clj꞉shorturl.core꞉> 
+; Syntax error compiling at (core.clj:21:14).
+; Unable to resolve symbol: generate-slug in this context
+clj꞉shorturl.core꞉> 
+; Syntax error compiling at (core.clj:21:14).
+; Unable to resolve symbol: generate-slug in this context
+clj꞉shorturl.core꞉> 
+nil
+clj꞉shorturl.core꞉> 
+#'shorturl.core/create-redirect
+clj꞉shorturl.core꞉> 
+#'shorturl.core/app
+clj꞉shorturl.core꞉> 
+"/home/dan"
+clj꞉shorturl.env꞉> 
+#'shorturl.env/envvars
+clj꞉shorturl.env꞉> 
+{:HOST "7s591apj6z7p.eu-central-2.psdb.cloud",
+ :DBTYPE "mysql",
+ :DBNAME "shorturl",
+ :USER "tupfracxs1zw",
+ :PASSWORD "pscale_pw_va1RqZllcKVTqdoFhS0wCpHWWy7aaHYCTGHiTFGULxw"}
+clj꞉shorturl.env꞉> 
+; Syntax error compiling at (env.clj:9:3).
+; Unable to resolve symbol: env in this context
+clj꞉shorturl.env꞉> 
+#'shorturl.env/env
+clj꞉shorturl.env꞉> 
+"7s591apj6z7p.eu-central-2.psdb.cloud"
+clj꞉shorturl.env꞉> 
+nil
+clj꞉shorturl.env꞉> 
+"/home/dan"
+clj꞉shorturl.env꞉> 
+#'shorturl.env/env
+clj꞉shorturl.env꞉> 
+"hey"
+clj꞉shorturl.env꞉> 
+; Execution error (ClassCastException) at shorturl.env/eval12655 (REPL:10).
+; class clojure.lang.Keyword cannot be cast to class java.lang.String (clojure.lang.Keyword is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+clj꞉shorturl.env꞉> 
+"HOME"
+clj꞉shorturl.env꞉> 
+#'shorturl.env/env
+clj꞉shorturl.env꞉> 
+"/home/dan"
+clj꞉shorturl.env꞉> 
+nil
+; WARNING: set already refers to: #'clojure.core/set in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/set
+; WARNING: into already refers to: #'clojure.core/into in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/into
+; WARNING: group-by already refers to: #'clojure.core/group-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/group-by
+; WARNING: update already refers to: #'clojure.core/update in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/update
+; WARNING: partition-by already refers to: #'clojure.core/partition-by in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/partition-by
+; WARNING: for already refers to: #'clojure.core/for in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/for
+; WARNING: filter already refers to: #'clojure.core/filter in namespace: shorturl.db, being replaced by: #'honey.sql.helpers/filter
+clj꞉shorturl.db꞉> 
+#'shorturl.db/mysql-db
+clj꞉shorturl.db꞉> 
+{:host "7s591apj6z7p.eu-central-2.psdb.cloud",
+ :dbtype "mysql",
+ :dbname "shorturl",
+ :user "tupfracxs1zw",
+ :password "pscale_pw_va1RqZllcKVTqdoFhS0wCpHWWy7aaHYCTGHiTFGULxw"}
+clj꞉shorturl.db꞉> 
