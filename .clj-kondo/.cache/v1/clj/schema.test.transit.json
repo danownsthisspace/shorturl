@@ -1,0 +1,1 @@
+["^ ","~$validate-schemas",["^ ","~:row",6,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$schema.test","~:top-ns","^7"],"~$deftest",["^ ","^1",14,"^2",1,"~:macro",true,"~:varargs-min-arity",1,"^5","^9","^6","^7","^8","^7"],"~:filename","/home/dan/.m2/repository/prismatic/schema/1.1.12/schema-1.1.12.jar:schema/test.clj"]
